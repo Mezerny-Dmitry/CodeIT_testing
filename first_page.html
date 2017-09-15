@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/styles/first_s.css">
+	<script type="text/javascript" src="assets/scripts/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/first_sc.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<h1>Go to the Dark side</h1>
+	<form method="post"  id="loginForm" onsubmit="inf()">
+		<input class="form form_name" type="text" name="name" required="" placeholder="Type your name">
+		<input class="form form_" type="text" name="secondname" required="" placeholder="Type your secondname">
+		<input class="form form_" type="email" name="email" placeholder="Type your e-mail">
+		<select class="form form_select" name="gender" required="">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select>
+		<input class="form form_" type="password" name="pass" placeholder="Type your password">
+		<p class="form__p"><input class="form form_checkbox" type="checkbox" name="check" value="ok" required="">Sith Code</p>
+		<div id="result" class="form__answer"></div>
+
+		<input class="form form_submit" type="submit" name="" value="Send">
+	</form>
+</div>
+<!-- action="http://codeit.pro/frontTestTask/user/registration" -->
+
+</body>
+</html>
