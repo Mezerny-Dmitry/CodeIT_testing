@@ -4,14 +4,16 @@
 	<title>Sign up</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="assets/styles/first_s.css">
-	<script type="text/javascript" src="assets/scripts/jquery-3.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="assets/scripts/first_sc.js"></script>
 </head>
 <body>
 
 <div class="wrapper">
 	<h1>Go to the Dark side</h1>
-	<form method="post"  id="loginForm" >
+	<form method="POST" action="javascript:void(null);" id="form">
 		<input class="form form_name" type="text" name="name" required="" placeholder="Type your name">
 		<input class="form form_" type="text" name="secondname" required="" placeholder="Type your secondname">
 		<input class="form form_" type="email" name="email" placeholder="Type your e-mail">
@@ -22,13 +24,10 @@
 		<input class="form form_" type="password" name="pass" placeholder="Type your password">
 		<p class="form__p"><input class="form form_checkbox" type="checkbox" name="check" value="ok" required="">Sith Code</p>
 		<div id="result" class="form__answer"></div>
-
-		<input class="form form_submit" type="submit" name="" value="Send">
+		<button type="button" class="form form_submit" id="submit">Send</button>
 	</form>
 </div>
-<!-- action="http://codeit.pro/frontTestTask/user/registration" 
 
-onsubmit="inf()"-->
 
 </body>
 </html>
