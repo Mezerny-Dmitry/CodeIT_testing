@@ -55,7 +55,7 @@ $(document).on('submit', form, function(e){
         window.location.href='second_page.html'
       }
       else {
-        alert(data.message)
+        alert("You are not worthy! \n" + data.status + ": " + data.message)
       };
     }
    });
